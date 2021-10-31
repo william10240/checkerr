@@ -1,5 +1,10 @@
 package checkerr
 
+import (
+	"runtime"
+	"log"
+)
+
 func Checkerr(err error){
 	if err != nil {
 		_, file, line, ok := runtime.Caller(1)
